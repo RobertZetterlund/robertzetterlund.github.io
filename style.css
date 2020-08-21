@@ -15,7 +15,7 @@ body {
 }
 
 .adhear {
-	background-image: linear-gradient(to bottom, #5c92c1 , #0763b3);
+	background-image: linear-gradient(to bottom, #0763b3, #5c92c1 );
   }
 
 .jmt {
@@ -31,7 +31,7 @@ body {
 }
 
 .cetac {
-	background-image: linear-gradient(to bottom, #e96060 , #770000);
+	background-image: linear-gradient(to bottom,#f7e54b, #f1edc0);
 
 }
 
@@ -43,6 +43,21 @@ body {
 h1 {
   font-size: 50px;
   word-break: break-all;
+}
+
+h4 {
+	font-size: 15px;
+	color: grey
+}
+
+.item cardtitle {
+	font-size: 30px;
+	color: black;
+}
+
+.item subtitle {
+	font-size: 20px;
+	color: grey;
 }
 
 .row {
@@ -68,15 +83,22 @@ h1 {
   clear: both;
 }
 
+
+
 /* Content */
 .item {
-  background-color: white;
   flex: 1;
   min-width: 300;
-  height: 400;
+  min-height: 400;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
+}
+
+.item .content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .itemContainer {
