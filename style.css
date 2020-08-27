@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -52,12 +53,13 @@ h4 {
 
 .item cardtitle {
 	font-size: 30px;
-	color: black;
+	font-weight: 900;
+	color: white;
 }
 
 .item subtitle {
 	font-size: 20px;
-	color: grey;
+	color: whitesmoke;
 }
 
 .row {
