@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #d9d9d9;
   padding: 20px;
   font-family: Arial;
 }
@@ -20,7 +20,7 @@ body {
   }
 
 .jmt {
-	background-image: linear-gradient(to bottom, #4b6e4b , #9c9fa1);
+	background-image: linear-gradient(to bottom, #1a751a , #a1adb4);
 }
 
 .ica {
@@ -31,35 +31,20 @@ body {
 	background-image: linear-gradient(to bottom, #57454B , #9C9497);	
 }
 
-.cetac {
-	background-image: linear-gradient(to bottom,#f7e54b, #f1edc0);
-
-}
-
-.lastnight {
-	background-image: linear-gradient(to bottom, #1DB954 , #5bf791);
-	
-}
-
-h1 {
+nametitle {
   font-size: 50px;
   word-break: break-all;
 }
 
-h4 {
-	font-size: 15px;
-	color: grey
-}
-
-.item cardtitle {
-	font-size: 30px;
+cardtitle {
+	font-size: 35px;
 	font-weight: 900;
-	color: white;
+	color: #000a17;
 }
 
-.item subtitle {
-	font-size: 20px;
-	color: whitesmoke;
+subtitle {
+	font-size: 25px;
+	color: #000a17;
 }
 
 .row {
@@ -70,6 +55,7 @@ h4 {
 .row,
 .row > .column {
   padding: 8px;
+  margin: 10;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -89,18 +75,15 @@ h4 {
 
 /* Content */
 .item {
+  display: flex;
   flex: 1;
-  min-width: 300;
+  width: 100%;
   min-height: 400;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
-}
-
-.item .content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  display: flex;
+	flex-direction: column;
 }
 
 .itemContainer {
