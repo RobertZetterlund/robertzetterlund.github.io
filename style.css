@@ -9,8 +9,82 @@ body {
   font-family: Arial;
 }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
+.header {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  text-align: center;
+  background: #115cb1;
+  color: white;
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header > h1 {
+  padding: 1%;
+}
+
+.separator {
+  height: 4rem;
+  align-self: center;
+  background-color: white;
+  width: 1px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  width: 100%;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer-content > * {
+  padding: 2ch;
+}
+
+.hover-link {
+  fill: black;
+}
+
+.hover-link:hover {
+  fill: grey
 }
