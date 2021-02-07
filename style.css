@@ -1,15 +1,23 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
 }
 
 body {
   background-color: #d9d9d9;
-  padding: 20px;
   font-family: Arial;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
+header {
   padding-bottom: 5%;
   padding-top: 5%;
   text-align: center;
@@ -19,10 +27,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  min-height: 50px;
 }
 
-.header > h1 {
+header > h1 {
   padding: 1%;
+}
+
+content {
+  display: flex;
+  flex-direction: column;
 }
 
 .separator {
@@ -51,32 +65,26 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-  }  
+  }
 }
 
 @media (max-width: 600px) {
-
-.header {
-  padding-bottom: 5%;
-  padding-top: 5%;
-  text-align: center;
-  background: #115cb1;
-  color: white;
-  font-size: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  header {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: center;
+    background: #115cb1;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-}
 
-
-
-.footer {
-  display: flex;
-  justify-content: center;
+footer {
   margin-top: auto;
-  width: 100%;
-  color: white;
+  min-height: 50px;
 }
 
 .footer-content {
@@ -88,13 +96,84 @@ body {
 }
 
 .footer-content > * {
-  padding: 2ch;
+  padding-left: 2ch;
+  padding-right: 2ch;
+  padding-bottom: 2ch;
 }
 
 .hover-link {
   fill: black;
+  margin-top: 0rem;
 }
 
 .hover-link:hover {
-  fill: grey
+  opacity: 0.5;
+  margin-top: -0.5rem;
+}
+
+.animation-fade-in * {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    padding-top: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0rem;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+    padding-top: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0rem;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    padding-top: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0rem;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+    padding-top: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0rem;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+    padding-top: 0.5rem;
+  }
+  to {
+    opacity: 1;
+    padding-top: 0rem;
+  }
 }
