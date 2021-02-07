@@ -58,27 +58,13 @@ content {
 
 @media (max-width: 800px) {
   .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    width: 90%;
   }
 }
 
 @media (max-width: 600px) {
   header {
-    padding-bottom: 5%;
-    padding-top: 5%;
-    text-align: center;
-    background: #115cb1;
-    color: white;
     font-size: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
