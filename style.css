@@ -8,6 +8,17 @@ main {
   width: 100%;
 }
 
+
+h2 > a {
+  color: rgb(90, 90, 90);
+  text-decoration: none
+}
+
+h2 > a:hover {
+  text-decoration: underline;
+}
+
+
 body {
   background-color: #d9d9d9;
   font-family: Arial;
