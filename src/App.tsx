@@ -1,27 +1,29 @@
 import React, { useState } from 'react';
 
-import styled, {keyframes, ThemeProvider} from 'styled-components'
+import styled, { ThemeProvider} from 'styled-components'
 import { lightTheme, darkTheme } from './theme/theme';
 import { ToggleTheme } from './ToggleTheme';
 import { Footer } from './Footer';
+import { AboutMe } from './AboutMe';
+import { Section } from './Section';
+
 
 function App() {  
-  const [theme,setTheme] = useState<'light'|'dark'>('dark')
+  const [theme, setTheme] = useState<'light'|'dark'>('dark')
 
   return (
     <ThemeProvider theme={theme==='light' ? lightTheme : darkTheme}>
+      <Header>
+          <ToggleTheme toggleTheme={() => setTheme((old) => old==='light' ? 'dark':'light')} theme={theme}/>
+      </Header>
       <Wrapper>
-        <Header>
-         <ToggleTheme toggleTheme={() => setTheme((old) => old==='light' ? 'dark':'light')} theme={theme}/>
-        </Header>
-
-        <Main>
-          <Name>
-            Robert Zetterlund
-          </Name>
-        </Main>
-
-        <Footer />
+        <Section id='welcome' nextId='work'>
+          <AboutMe /> 
+        </Section>
+        <Section id='work' nextId='tech'/>
+        <Section id='tech'>
+          <Footer />
+        </Section>
       </Wrapper>
     </ThemeProvider>
   );
@@ -30,51 +32,22 @@ function App() {
 
 
 const Header = styled.header`
-  padding:20px;
+  width:100%;
   display:flex;
   justify-content:flex-end;
   align-items:center;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
 `
-
-export default App;
-
-const blink = keyframes`
-  to {
-    opacity:0;
-  }
-`
-
-const Name = styled.h3`
-  position:relative;
-  transition: color 0.5s ease;
-  color: ${({theme})=> theme.accent};
-  &::after {
-    content:'';
-    position:absolute;
-    top:0;
-    right:-4px;
-    bottom:0;
-    width:2px;
-    height:100%;
-    transition: background-color 0.5s ease;
-    background-color: ${({theme})=> theme.accent};
-    opacity:1;
-    animation: ${blink} 1s linear infinite;
-  }
-
-`
-
 
 const Wrapper = styled.div`
   transition: background-color 0.5s ease;
   background-color: ${({theme})=> theme.background};
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  overflow-y:scroll;
+  position:relative;
+  scroll-behavior: smooth;
 `
 
-const Main = styled.main`
-  display:grid;
-  place-items:center;
-`
-
+export default App;

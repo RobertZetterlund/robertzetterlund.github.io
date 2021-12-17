@@ -21,7 +21,7 @@ export const Footer = () => (
 
 
 
-const pliancyCss = css`
+export const pliancyCss = css`
   transition: transform 250ms ease;
   
   &:focus, &:hover {
@@ -29,7 +29,9 @@ const pliancyCss = css`
   }
   svg {
     transition: fill 250ms ease;
-    fill: ${({theme}) => theme.accent}
+    fill: ${({theme}) => theme.accent};
+    height:24px;
+    width:24px;
   }
 `
 
@@ -39,12 +41,13 @@ const FooterLink = styled.a`
 `
 
 const FooterContainer = styled.footer`
-  height:20px;
   padding: 10px 0;
   width:100%;
-  display:flex;
-  gap:20px;
-  justify-content:center;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
 `
 
 
