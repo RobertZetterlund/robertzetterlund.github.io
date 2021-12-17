@@ -7,10 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 html,
 body,
 #root,
-#root > main {
+#root > div {
   height: 100%;
 }
 
