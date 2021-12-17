@@ -1,26 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import styled, {keyframes} from 'styled-components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main >
+     <Name>
+       Robert Zetterlund
+     </Name>
+
+
+    
+
+
+    </Main>
   );
 }
 
 export default App;
+
+const blink = keyframes`
+  to {
+    opacity:0;
+  }
+
+`
+
+
+const Name = styled.h3`
+  position:relative;
+  &::after {
+    content:'';
+    position:absolute;
+    top:0;
+    right:-4px;
+    bottom:0;
+    width:2px;
+    height:100%;
+    background-color: black;
+    opacity:1;
+    animation: ${blink} 1s linear infinite;
+  }
+
+`
+
+
+const Main = styled.main`
+  display:grid;
+  place-items:center;
+`
+
