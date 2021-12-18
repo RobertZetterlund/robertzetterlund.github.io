@@ -6,6 +6,7 @@ import { ToggleTheme } from './ToggleTheme';
 import { Footer } from './Footer';
 import { AboutMe } from './AboutMe';
 import { Section } from './Section';
+import { Work } from './Work';
 
 
 function App() {  
@@ -20,7 +21,9 @@ function App() {
         <Section id='welcome' nextId='work'>
           <AboutMe /> 
         </Section>
-        <Section id='work' nextId='tech'/>
+        <Section id='work' nextId='tech'>
+          <Work />
+          </Section>
         <Section id='tech'>
           <Footer />
         </Section>
