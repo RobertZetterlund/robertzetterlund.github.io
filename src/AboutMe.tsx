@@ -1,18 +1,12 @@
 import React from 'react';
 import styled, {keyframes} from 'styled-components'
 
-
 export const AboutMe = () =>  {  
-
   return (
         <Main>
           <Name>
             Robert Zetterlund
           </Name>
-
-          
-          
-          
         </Main>        
   );
 }
@@ -51,8 +45,7 @@ const Name = styled.h1`
 
 `
 
-const Main = styled.main`
+const Main = styled.div`
   display:grid;
   place-items:center;
 `
-
