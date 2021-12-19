@@ -9,5 +9,9 @@ declare module "styled-components" {
     background: string;
     accent: string;
     gxc: string;
+    card: {
+      bg: string;
+      text: string;
+    };
   }
 }
