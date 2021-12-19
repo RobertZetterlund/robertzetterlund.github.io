@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 import {
   backgroundTransitionCss,
   colorTransitionCss,
-} from "./transition.styled";
+} from "../../shared/transition.styled";
 
 const TEXT = ", I'm Robert Zetterlund";
 const LENGTH = TEXT.length;
@@ -59,6 +59,7 @@ const TypingSpan = styled.span`
     right: 0;
     bottom: 0;
     left: 0;
+    ${backgroundTransitionCss};
   }
 
   /* Blinking cursor */
@@ -66,7 +67,6 @@ const TypingSpan = styled.span`
     margin-left: 1px;
     width: 3px;
     height: 100%;
-    ${backgroundTransitionCss};
     background-color: ${({ theme }) => theme.accent};
     opacity: 1;
     animation: ${blink} 1.5s steps(1) infinite,
@@ -77,7 +77,6 @@ const TypingSpan = styled.span`
   &::before {
     background-color: ${({ theme }) => theme.background};
     height: 100%;
-    ${colorTransitionCss};
     animation: ${type} ${TYPING_SPEED} steps(${LENGTH}) 1s forwards;
   }
 `;
