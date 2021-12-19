@@ -15,12 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Header>
-        <ToggleTheme
-          toggleTheme={() =>
-            setTheme((old) => (old === "light" ? "dark" : "light"))
-          }
-          theme={theme}
-        />
+        <ToggleTheme setTheme={setTheme} theme={theme} />
       </Header>
       <Wrapper>
         <Section id="welcome" nextId="work">
