@@ -1,6 +1,11 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
+import {
+  backgroundTransitionCss,
+  colorTransitionCss,
+} from "./transition.styled";
+
 const TEXT = ", I'm Robert Zetterlund";
 const LENGTH = TEXT.length;
 const TYPING_SPEED = "3s";
@@ -37,7 +42,7 @@ const type = keyframes`
 
 const Name = styled.h1`
   position: relative;
-  transition: color 0.5s ease;
+  ${colorTransitionCss};
   color: ${({ theme }) => theme.accent};
   width: max-content;
   font-size: clamp(1rem, 4vw, 3rem);
@@ -48,7 +53,6 @@ const TypingSpan = styled.span`
 
   &::before,
   &::after {
-    transition: background-color 0.5s ease;
     content: "";
     position: absolute;
     top: 0;
@@ -60,9 +64,9 @@ const TypingSpan = styled.span`
   /* Blinking cursor */
   &::after {
     margin-left: 1px;
-    width: 2px;
+    width: 3px;
     height: 100%;
-    transition: background-color 0.5s ease;
+    ${backgroundTransitionCss};
     background-color: ${({ theme }) => theme.accent};
     opacity: 1;
     animation: ${blink} 1.5s steps(1) infinite,
@@ -73,6 +77,7 @@ const TypingSpan = styled.span`
   &::before {
     background-color: ${({ theme }) => theme.background};
     height: 100%;
+    ${colorTransitionCss};
     animation: ${type} ${TYPING_SPEED} steps(${LENGTH}) 1s forwards;
   }
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Chalmers } from "./cards/chalmers";
 import { Dify } from "./cards/dify";
 import { Gxc } from "./cards/gxc";
 
@@ -8,16 +9,18 @@ export const Work = () => {
     <Main>
       <Gxc />
       <Dify />
+      <Chalmers />
     </Main>
   );
 };
 
 const Main = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 10px 30px;
-  gap: 20px;
+  gap: 48px;
+  justify-content: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 `;

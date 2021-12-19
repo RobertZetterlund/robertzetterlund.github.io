@@ -4,34 +4,41 @@ import {
   Body,
   Card,
   ImageContainerCss,
-  LI,
   Picture,
   Text,
   Company,
 } from "./card.styled";
 
+import difyImg from "./dify.png";
+
 export const Dify = () => {
   return (
     <Card>
       <ImageContainer>
-        <Company>At Opera</Company>
-        <Picture
-          src="https://gxc.gg/apple-touch-icon.png"
-          alt="A picture of me"
-        />
+        <Company>
+          @
+          <a href="https://www.opera.com/" rel="noreferrer" target="_blank">
+            Opera
+          </a>
+        </Company>
+        <Picture src={difyImg} alt="A picture of me" />
       </ImageContainer>
       <Text>
         <Body>
           React Native development on{" "}
-          <GXCLink href="https://gxc.gg/" rel="noreferrer" target="_blank">
+          <a
+            href="https://cashback.getdify.com/es/en/"
+            rel="noreferrer"
+            target="_blank"
+          >
             dify
-          </GXCLink>
+          </a>
         </Body>
         <ul>
-          <LI>Testing with Detox 🧪</LI>
-          <LI>Redux Toolkit 🧰</LI>
-          <LI>GA and Firebase 📈</LI>
-          <LI>Typescript 🤖</LI>
+          <li>Testing with Detox 🧪</li>
+          <li>Redux Toolkit 🧰</li>
+          <li>GA and Firebase 📈</li>
+          <li>Typescript 🤖</li>
         </ul>
       </Text>
     </Card>
@@ -40,23 +47,15 @@ export const Dify = () => {
 
 const ImageContainer = styled.div`
   ${ImageContainerCss};
-  background: rgb(189, 255, 0);
+
+  background: rgb(192, 234, 0);
   background: linear-gradient(
     45deg,
-    rgb(189, 255, 0),
-    #007bff,
-    rgb(230, 100, 101),
-    rgb(189, 255, 0),
-    #007bff
+    rgba(0, 217, 84, 1),
+    rgba(192, 234, 0, 1),
+    rgba(0, 217, 84, 1),
+    rgba(0, 217, 84, 1),
+    rgba(192, 234, 0, 1)
   );
   background-size: 400% 400%;
-`;
-
-const GXCLink = styled.a`
-  text-decoration: underline;
-  color: ${({ theme }) => theme.gxc};
-
-  &:hover {
-    color: ${({ theme }) => theme.gxc};
-  }
 `;
