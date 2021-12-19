@@ -1,45 +1,50 @@
-import React from 'react';
+import React from "react";
 
-import styled, {css} from 'styled-components'
+import styled, { css } from "styled-components";
 
-export const ToggleTheme = ({toggleTheme, theme}: {toggleTheme: () => void, theme:'light'|'dark'})=> {
-
-    return (
-        <Toggle.Container onClick={toggleTheme}>
-            <Toggle.Track>
-                <Toggle.Icon>💡</Toggle.Icon>
-                <Toggle.Icon>🦉</Toggle.Icon>
-                <Ball $light={theme==='light'} />
-            </Toggle.Track>
-        </Toggle.Container>
-        )
-}
+export const ToggleTheme = ({
+  toggleTheme,
+  theme,
+}: {
+  toggleTheme: () => void;
+  theme: "light" | "dark";
+}) => {
+  return (
+    <Toggle.Container onClick={toggleTheme}>
+      <Toggle.Track>
+        <Toggle.Icon>💡</Toggle.Icon>
+        <Toggle.Icon>🦉</Toggle.Icon>
+        <Ball $light={theme === "light"} />
+      </Toggle.Track>
+    </Toggle.Container>
+  );
+};
 
 const ballLeftCss = css`
-    left:3px
-`
+  left: 3px;
+`;
 
 const ballRightCss = css`
-    left:37px
-`
+  left: 37px;
+`;
 
-const Ball = styled.div<{$light:boolean}>`
-  width:25px;
-  height:25px;
-  border-radius:50%;
-  position:absolute;
+const Ball = styled.div<{ $light: boolean }>`
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
   background-color: white;
-  transition: .33s;
-  ${({$light}) => $light ? ballLeftCss : ballRightCss}
-`
+  transition: 0.33s;
+  ${({ $light }) => ($light ? ballLeftCss : ballRightCss)}
+`;
 
 const Toggle = {
   Container: styled.div`
-    position:relative;
+    position: relative;
     &:hover ${Ball} {
-        box-shadow: 0 0 3px 2px #16C172;
+      box-shadow: 0 0 3px 2px #16c172;
     }
-    cursor:pointer;
+    cursor: pointer;
   `,
   Icon: styled.div`
     align-items: center;
@@ -49,15 +54,13 @@ const Toggle = {
     width: 8px;
   `,
   Track: styled.div`
-    border-radius:20px;
-    background-color:gray;
-    width:40px;
-    height:30px;
-    display:flex;
-    justify-content:space-between;
+    border-radius: 20px;
+    background-color: gray;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
     padding: 0 12px;
-    align-items:center;
-    ` 
-}
-
-
+    align-items: center;
+  `,
+};
