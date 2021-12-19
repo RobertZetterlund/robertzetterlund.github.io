@@ -9,7 +9,7 @@ import {
 const TEXT = ", I'm Robert Zetterlund";
 const LENGTH = TEXT.length;
 const TYPING_SPEED = "3s";
-export const AboutMe = () => {
+export const Welcome = () => {
   return (
     <Main>
       <Name>

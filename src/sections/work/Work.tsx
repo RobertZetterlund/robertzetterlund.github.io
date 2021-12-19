@@ -21,6 +21,5 @@ const Main = styled.div`
   padding: 10px 30px;
   gap: 48px;
   justify-content: center;
-  padding-bottom: 50px;
   flex-wrap: wrap;
 `;

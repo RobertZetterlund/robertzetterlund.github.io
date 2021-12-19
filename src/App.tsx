@@ -4,10 +4,11 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme/theme";
 import { ToggleTheme } from "./theme/ToggleTheme";
 import { Footer } from "./sections/Footer";
-import { AboutMe } from "./sections/welcome/AboutMe";
+import { Welcome } from "./sections/welcome/Welcome";
 import { Section } from "./sections/Section";
 import { Work } from "./sections/work/Work";
 import { backgroundTransitionCss } from "./shared/transition.styled";
+import { Info } from "./sections/info/Info";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
@@ -19,10 +20,13 @@ function App() {
       </Header>
       <Wrapper>
         <Section id="welcome" nextId="work">
-          <AboutMe />
+          <Welcome />
         </Section>
         <Section id="work">
           <Work />
+        </Section>
+        <Section id="work">
+          <Info />
           <Footer />
         </Section>
       </Wrapper>
