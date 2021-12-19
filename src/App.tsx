@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme/theme";
-import { ToggleTheme } from "./ToggleTheme";
-import { Footer } from "./Footer";
-import { AboutMe } from "./AboutMe";
-import { Section } from "./Section";
-import { Work } from "./work/Work";
-import { backgroundTransitionCss } from "./transition.styled";
+import { ToggleTheme } from "./theme/ToggleTheme";
+import { Footer } from "./sections/Footer";
+import { AboutMe } from "./sections/welcome/AboutMe";
+import { Section } from "./sections/Section";
+import { Work } from "./sections/work/Work";
+import { backgroundTransitionCss } from "./shared/transition.styled";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");

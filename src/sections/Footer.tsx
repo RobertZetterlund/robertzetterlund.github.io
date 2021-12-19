@@ -1,8 +1,9 @@
 import React from "react";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import { FaGithub, FaLinkedin, FaRegPaperPlane } from "react-icons/fa";
+import { pliancyCss } from "../shared/pliancy.styled";
 
 export const Footer = () => (
   <FooterContainer>
@@ -25,23 +26,6 @@ export const Footer = () => (
     </FooterLink>
   </FooterContainer>
 );
-
-export const pliancyCss = css`
-  transition: transform 250ms ease, opacity 250ms ease;
-
-  &:focus,
-  &:hover {
-    transform: scale(1.2);
-    opacity: 0.7;
-  }
-  svg {
-    transition: fill 250ms ease;
-    fill: ${({ theme }) => theme.accent};
-    height: 24px;
-    width: 24px;
-    opacity: 1;
-  }
-`;
 
 const FooterLink = styled.a`
   ${pliancyCss};

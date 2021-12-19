@@ -38,7 +38,7 @@ export const ImageContainerCss = css`
   position: relative;
   height: 200px;
   width: 100%;
-  border-radius: 0 0 105px 0;
+  border-radius: 20px 20px 105px 0px;
   display: grid;
   place-items: center;
   animation: ${gradient} 15s linear infinite;
@@ -49,8 +49,7 @@ const CardCss = css`
   width: 100%;
   background-color: ${({ theme }) => theme.card.bg};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  overflow: hidden;
+  border-radius: 22px;
 `;
 
 export const Card = styled.div`
