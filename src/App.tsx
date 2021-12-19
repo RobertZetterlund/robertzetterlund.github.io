@@ -6,7 +6,9 @@ import { ToggleTheme } from './ToggleTheme';
 import { Footer } from './Footer';
 import { AboutMe } from './AboutMe';
 import { Section } from './Section';
-import { Work } from './Work';
+import { Work } from './work/Work';
+
+
 
 
 function App() {  
@@ -21,12 +23,12 @@ function App() {
         <Section id='welcome' nextId='work'>
           <AboutMe /> 
         </Section>
-        <Section id='work' nextId='tech'>
+        <Section id='work'>
           <Work />
-          </Section>
-        <Section id='tech'>
           <Footer />
-        </Section>
+          </Section>
+        
+        
       </Wrapper>
     </ThemeProvider>
   );
@@ -35,14 +37,12 @@ function App() {
 
 
 const Header = styled.header`
-  width:100%;
   display:flex;
-  justify-content:flex-end;
-  align-items:center;
   position:absolute;
   top:0;
-  left:0;
+  right:0;
   z-index:1;
+  padding:20px;
 `
 
 const Wrapper = styled.div`

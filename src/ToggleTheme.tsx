@@ -36,7 +36,6 @@ const Ball = styled.div<{$light:boolean}>`
 const Toggle = {
   Container: styled.div`
     position:relative;
-    margin:20px;
     &:hover ${Ball} {
         box-shadow: 0 0 3px 2px #16C172;
     }
