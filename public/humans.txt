@@ -1,1 +1,7 @@
-Robert made this site!
+Robert Zetterlund made this site. It is created with
+ * create-react-app
+ * typescript
+ * styled-components
+
+Shout out to Kevin Powell for the typewriter css:
+https://www.youtube.com/watch?v=w1nhwUGsG6M&ab_channel=KevinPowell
