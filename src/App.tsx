@@ -7,6 +7,7 @@ import { Footer } from "./Footer";
 import { AboutMe } from "./AboutMe";
 import { Section } from "./Section";
 import { Work } from "./work/Work";
+import { backgroundTransitionCss } from "./transition.styled";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
@@ -44,7 +45,7 @@ const Header = styled.header`
 `;
 
 const Wrapper = styled.div`
-  transition: background-color 0.5s ease;
+  ${backgroundTransitionCss};
   background-color: ${({ theme }) => theme.background};
   overflow-y: scroll;
   position: relative;

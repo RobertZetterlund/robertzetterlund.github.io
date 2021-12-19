@@ -9,12 +9,19 @@ export const Company = styled.div`
   border-radius: 20px;
   color: ${({ theme }) => theme.card.text};
   background-color: ${({ theme }) => theme.card.bg};
+  font-size: 14px;
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `;
 
 export const Picture = styled.img`
   height: 120px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 20%;
 `;
 
 const gradient = keyframes`
@@ -31,18 +38,18 @@ export const ImageContainerCss = css`
   position: relative;
   height: 200px;
   width: 100%;
-  border-radius: 0 0 40% 0;
+  border-radius: 0 0 105px 0;
   display: grid;
   place-items: center;
   animation: ${gradient} 15s linear infinite;
 `;
 
 const CardCss = css`
-  max-width: 350px;
+  max-width: 300px;
   width: 100%;
   background-color: ${({ theme }) => theme.card.bg};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
+  border-radius: 20px;
   overflow: hidden;
 `;
 
@@ -54,14 +61,30 @@ export const Text = styled.div`
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 20px;
-`;
+  padding: 14px;
+  @media (min-width: 576px) {
+    padding: 20px;
+  }
 
-export const LI = styled.li`
-  text-align: left;
-  color: ${({ theme }) => theme.card.text};
+  ul {
+    padding-inline-start: 24px;
+    li {
+      text-align: left;
+      color: ${({ theme }) => theme.card.text};
+    }
+  }
 `;
 
 export const Body = styled.p`
   color: ${({ theme }) => theme.card.text};
+  font-weight: 600;
+
+  a {
+    text-decoration: underline;
+    color: ${({ theme }) => theme.gxc};
+
+    &:hover {
+      color: ${({ theme }) => theme.gxc};
+    }
+  }
 `;
