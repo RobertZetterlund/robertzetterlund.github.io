@@ -35,7 +35,7 @@ export const Chalmers = () => {
         <ul>
           <li>Design principles 📦</li>
           <li>Algorithms 📚</li>
-          <li>Math 🎓</li>
+          <li>Linear algebra 📗</li>
           <li>Agile workflow 🤾‍♂️</li>
         </ul>
       </Text>

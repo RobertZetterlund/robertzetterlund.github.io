@@ -35,9 +35,9 @@ export const Dify = () => {
           </a>
         </Body>
         <ul>
-          <li>Testing with Detox 🧪</li>
           <li>Redux Toolkit 🧰</li>
           <li>GA and Firebase 📈</li>
+          <li>Testing with Detox 🧪</li>
           <li>Typescript 🤖</li>
         </ul>
       </Text>
