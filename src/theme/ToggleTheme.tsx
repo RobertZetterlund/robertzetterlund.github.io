@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styled, { css, keyframes } from "styled-components";
 import { usePreferredTheme } from "./usePreferredTheme";
@@ -30,6 +30,15 @@ export const ToggleTheme = ({
       }
     },
   });
+
+  // Clean up the output.
+  useEffect(() => {
+    if (themeInfo !== undefined) {
+      setTimeout(() => {
+        setHasClicked(true);
+      }, 5000);
+    }
+  }, [themeInfo]);
 
   return (
     <Wrapper>
@@ -128,8 +137,9 @@ const ThemeInfo = styled.div<{ $shownInfo: boolean }>`
     forwards;
 `;
 
-const ThemeText = styled.div`
+const ThemeText = styled.output.attrs(() => ({ role: "status" }))`
   padding: 12px 18px;
+  display: flex;
 `;
 
 const ballLeftCss = css`
