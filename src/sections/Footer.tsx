@@ -32,11 +32,10 @@ const FooterLink = styled.a`
 `;
 
 const FooterContainer = styled.footer`
-  padding: 10px 0;
+  padding-top: 24px;
+  padding-bottom: 10px;
   width: 100%;
   display: flex;
   gap: 32px;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
 `;

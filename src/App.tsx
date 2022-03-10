@@ -24,9 +24,6 @@ function App() {
         </Section>
         <Section id="work">
           <Work />
-        </Section>
-        <Section id="work">
-          <Info />
           <Footer />
         </Section>
       </Wrapper>
@@ -35,9 +32,7 @@ function App() {
 }
 
 const Header = styled.header`
-  display: flex;
-  position: absolute;
-  top: 0;
+  position: fixed;
   right: 0;
   z-index: 1;
   padding: 20px;
