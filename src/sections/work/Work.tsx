@@ -22,4 +22,5 @@ const Main = styled.div`
   gap: 48px;
   justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
 `;
