@@ -31,11 +31,15 @@ const NextAnchor = styled.a`
 `;
 
 const SectionContainer = styled.section`
-  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
+
+  min-height: 100vh;
+  @media (max-width: 576px) {
+    min-height: -webkit-fill-available;
+  }
 `;
