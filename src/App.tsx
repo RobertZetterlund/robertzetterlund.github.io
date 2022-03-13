@@ -8,13 +8,15 @@ import { Welcome } from "./sections/welcome/Welcome";
 import { Section } from "./sections/Section";
 import { Work } from "./sections/work/Work";
 import { backgroundTransitionCss } from "./shared/transition.styled";
-import { Info } from "./sections/info/Info";
+
+import { createGlobalStyle } from "styled-components";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <GlobalStyle />
       <Header>
         <ToggleTheme setTheme={setTheme} theme={theme} />
       </Header>
@@ -31,19 +33,24 @@ function App() {
   );
 }
 
+const GlobalStyle = createGlobalStyle`
+  body {
+    // needed for tab switches in iPhone
+    background-color: ${({ theme }) => theme.background};
+  }
+`;
+
 const Header = styled.header`
   position: fixed;
-  right: 0;
+  right: 20px;
+  top: 20px;
   z-index: 1;
-  padding: 20px;
 `;
 
 const Wrapper = styled.div`
   ${backgroundTransitionCss};
   background-color: ${({ theme }) => theme.background};
-  overflow-y: scroll;
   position: relative;
-  scroll-behavior: smooth;
 `;
 
 export default App;
