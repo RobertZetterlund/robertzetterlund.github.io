@@ -10,12 +10,22 @@ import { Work } from "./sections/work/Work";
 import { backgroundTransitionCss } from "./shared/transition.styled";
 
 import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <Helmet>
+        <meta
+          name="theme-color"
+          content={
+            theme === "light" ? lightTheme.background : darkTheme.background
+          }
+        />
+      </Helmet>
+
       <GlobalStyle />
       <Header>
         <ToggleTheme setTheme={setTheme} theme={theme} />
