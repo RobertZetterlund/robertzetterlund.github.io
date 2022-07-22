@@ -1,33 +1,36 @@
-import React, { HtmlHTMLAttributes } from "react";
+import React, { forwardRef } from "react";
 
 import styled from "styled-components";
 import { FaChevronDown } from "react-icons/fa";
 import { pliancyCss } from "../shared/pliancy.styled";
 
-export const Section = ({
-  children,
-  nextId,
-  ...props
-}: HtmlHTMLAttributes<HTMLDivElement> & { nextId?: string }) => (
-  <SectionContainer {...props}>
-    {children}
-    {nextId && <NextSection id={nextId} />}
-  </SectionContainer>
+type SectionProps = React.HTMLAttributes<HTMLDivElement> & {
+  onScrollNext?: () => void;
+};
+
+export const Section = forwardRef<HTMLDivElement, SectionProps>(
+  ({ children, onScrollNext, ...props }, ref) => (
+    <SectionContainer ref={ref} {...props}>
+      {children}
+      {onScrollNext && <NextSection onClick={onScrollNext} />}
+    </SectionContainer>
+  )
 );
 
-const NextSection = ({ id }: { id: string }) => (
-  <NextAnchor href={`#${id}`}>
+const NextSection = ({ onClick }: { onClick: () => void }) => (
+  <NextAnchor onClick={onClick}>
     <FaChevronDown />
   </NextAnchor>
 );
 
-const NextAnchor = styled.a`
+const NextAnchor = styled.i`
   bottom: 0;
   padding: 20px;
   ${pliancyCss}
   position:absolute;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 `;
 
 const SectionContainer = styled.section`

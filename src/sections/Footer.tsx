@@ -11,16 +11,21 @@ export const Footer = () => (
       href="https://github.com/RobertZetterlund"
       target="blank"
       rel="noreferrer"
+      aria-label="Github"
     >
       <FaGithub />
     </FooterLink>
-    <FooterLink href="mailto:robert.zetterlund@outlook.com">
+    <FooterLink
+      href="mailto:robert.zetterlund@outlook.com"
+      aria-label="Paperplane"
+    >
       <FaRegPaperPlane />
     </FooterLink>
     <FooterLink
       href="https://www.linkedin.com/in/robert-zetterlund-a3bb6717a/"
       target="blank"
       rel="noreferrer"
+      aria-label="LinkedIn"
     >
       <FaLinkedin />
     </FooterLink>
