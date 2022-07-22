@@ -8,34 +8,33 @@ import {
   Text,
   Company,
 } from "./card.styled";
-import gxcImg from "./gxc.png";
+import talosImg from "./talos.png";
 
-export const Gxc = () => {
+export const Talos = () => {
   return (
     <Card>
       <ImageContainer>
         <Company>
           @
-          <a href="https://www.opera.com/" rel="noreferrer" target="_blank">
-            Opera
+          <a href="https://talos.com/" rel="noreferrer" target="_blank">
+            Talos
           </a>
         </Company>
         <Picture
-          src={gxcImg}
-          alt="A cartoony cutout G representing the icon of gxc.gg"
+          src={talosImg}
+          alt="The Talos logo, a spacious 3x3 grid of filled black squares. The 3 squares diagonally from the top left to the bottom right are omitted."
         />
       </ImageContainer>
       <Text>
         <Body>
-          {"React development on "}
-          <a href="https://gxc.gg/" rel="noreferrer" target="_blank">
-            gxc.gg
+          {"Engineering at "}
+          <a href="https://talostrading.com/" rel="noreferrer" target="_blank">
+            talostrading.com
           </a>
         </Body>
         <ul>
-          <li>next.js and CRA 🏄‍♂️</li>
-          <li>react-query 🔄</li>
-          <li>styled-components 💅</li>
+          <li>React 🌀</li>
+          <li>RxJS 🐬</li>
           <li>Typescript 🤖</li>
         </ul>
       </Text>
@@ -48,11 +47,11 @@ const ImageContainer = styled.div`
   background: rgb(224, 108, 109);
   background: linear-gradient(
     45deg,
-    rgba(224, 108, 109, 1),
-    rgba(0, 100, 208, 1),
-    rgba(224, 108, 109, 1),
-    rgba(224, 108, 109, 1),
-    rgba(0, 100, 208, 1)
+    rgb(0, 255, 183),
+    rgb(247, 147, 26),
+    rgb(0, 255, 183),
+    rgb(0, 255, 183),
+    rgb(247, 147, 26)
   );
   background-size: 400% 400%;
 `;
