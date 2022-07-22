@@ -3,10 +3,12 @@ import styled from "styled-components";
 import { Chalmers } from "./cards/chalmers";
 import { Dify } from "./cards/dify";
 import { Gxc } from "./cards/gxc";
+import { Talos } from "./cards/talos";
 
 export const Work = () => {
   return (
     <Main>
+      <Talos />
       <Gxc />
       <Dify />
       <Chalmers />
@@ -16,7 +18,7 @@ export const Work = () => {
 
 const Main = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   padding: 10px 30px;
   gap: 48px;

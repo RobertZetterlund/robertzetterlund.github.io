@@ -21,7 +21,6 @@ export const Company = styled.div`
 export const Picture = styled.img`
   height: 120px;
   width: auto;
-  border-radius: 20%;
 `;
 
 const gradient = keyframes`
