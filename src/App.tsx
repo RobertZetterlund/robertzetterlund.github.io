@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme/theme";
@@ -14,6 +14,7 @@ import { Helmet } from "react-helmet";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const workRef = useRef<HTMLDivElement>(null);
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
@@ -31,10 +32,10 @@ function App() {
         <ToggleTheme setTheme={setTheme} theme={theme} />
       </Header>
       <Wrapper>
-        <Section id="welcome" nextId="work">
+        <Section onScrollNext={() => workRef.current?.scrollIntoView()}>
           <Welcome />
         </Section>
-        <Section id="work">
+        <Section ref={workRef}>
           <Work />
           <Footer />
         </Section>
