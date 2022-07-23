@@ -40,9 +40,5 @@ const SectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   flex: 1;
-
   min-height: 100vh;
-  @media (max-width: 576px) {
-    min-height: -webkit-fill-available;
-  }
 `;
