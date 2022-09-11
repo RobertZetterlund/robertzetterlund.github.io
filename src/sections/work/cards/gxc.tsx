@@ -33,10 +33,18 @@ export const Gxc = () => {
           </a>
         </Body>
         <ul>
-          <li>next.js and CRA 🏄‍♂️</li>
-          <li>react-query 🔄</li>
-          <li>styled-components 💅</li>
-          <li>Typescript 🤖</li>
+          <li>
+            <a href="https://nextjs.org/">next.js 🏄‍♂️</a>
+          </li>
+          <li>
+            <a href="https://tanstack.com/query/v4">react-query 🔄</a>
+          </li>
+          <li>
+            <a href="https://styled-components.com/">styled-components 💅</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">Typescript 🤖</a>
+          </li>
         </ul>
       </Text>
     </Card>

@@ -33,9 +33,16 @@ export const Talos = () => {
           </a>
         </Body>
         <ul>
-          <li>React 🌀</li>
-          <li>RxJS 🐬</li>
-          <li>Typescript 🤖</li>
+          <li>
+            <a href="https://reactjs.org/">React 🌀</a>
+          </li>
+          <li>
+            <a href="https://rxjs.dev/">RxJS 🐬</a>
+          </li>
+
+          <li>
+            <a href="https://www.typescriptlang.org/">Typescript 🤖</a>
+          </li>
         </ul>
       </Text>
     </Card>
