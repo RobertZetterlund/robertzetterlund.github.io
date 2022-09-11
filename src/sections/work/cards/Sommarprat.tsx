@@ -25,10 +25,18 @@ export const Sommarprat = () => {
           </a>
         </Body>
         <ul>
-          <li>remix.run 💿</li>
-          <li>prisma 🔼</li>
-          <li>tailwind.css 🧬</li>
-          <li>fly.io 🪂</li>
+          <li>
+            <a href="https://remix.run/">remix.run 💿</a>
+          </li>
+          <li>
+            <a href="https://www.prisma.io/">prisma 🔼</a>
+          </li>
+          <li>
+            <a href="https://tailwindcss.com/">tailwindcss 🧬</a>{" "}
+          </li>
+          <li>
+            <a href="https://fly.io/">fly.io 🪂</a>
+          </li>
         </ul>
       </Text>
     </Card>

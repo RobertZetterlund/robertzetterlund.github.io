@@ -35,10 +35,18 @@ export const Dify = () => {
           </a>
         </Body>
         <ul>
-          <li>Redux Toolkit 🧰</li>
-          <li>GA and Firebase 📈</li>
-          <li>Testing with Detox 🧪</li>
-          <li>Typescript 🤖</li>
+          <li>
+            <a href="https://redux-toolkit.js.org/">Redux Toolkit 🧰</a>{" "}
+          </li>
+          <li>
+            <a href="https://firebase.google.com/">GA and Firebase 📈</a>
+          </li>
+          <li>
+            <a href="https://wix.github.io/Detox/">Testing with Detox 🧪</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">Typescript 🤖</a>
+          </li>
         </ul>
       </Text>
     </Card>
