@@ -3,11 +3,13 @@ import styled from "styled-components";
 import { Chalmers } from "./cards/chalmers";
 import { Dify } from "./cards/dify";
 import { Gxc } from "./cards/gxc";
+import { Sommarprat } from "./cards/Sommarprat";
 import { Talos } from "./cards/talos";
 
 export const Work = () => {
   return (
     <Main>
+      <Sommarprat />
       <Talos />
       <Gxc />
       <Dify />
