@@ -5,10 +5,12 @@ import { Dify } from "./cards/dify";
 import { Gxc } from "./cards/gxc";
 import { Sommarprat } from "./cards/Sommarprat";
 import { Talos } from "./cards/talos";
+import { IcaPrices } from "./cards/ica-prices";
 
 export const Work = () => {
   return (
     <Main>
+      <IcaPrices />
       <Sommarprat />
       <Talos />
       <Gxc />
