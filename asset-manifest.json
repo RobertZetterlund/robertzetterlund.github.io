@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.ba169803.css",
-    "main.js": "/static/js/main.fdce2500.js",
+    "main.js": "/static/js/main.1e63dc9b.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/roboto-mono-all-400-normal.woff": "/static/media/roboto-mono-all-400-normal.8c12dec86f8b17eac652.woff",
     "static/media/roboto-mono-cyrillic-ext-400-normal.woff2": "/static/media/roboto-mono-cyrillic-ext-400-normal.b60acdafdfd55591eddf.woff2",
     "static/media/roboto-mono-latin-400-normal.woff2": "/static/media/roboto-mono-latin-400-normal.535bc89d4af715503b01.woff2",
     "static/media/roboto-mono-latin-ext-400-normal.woff2": "/static/media/roboto-mono-latin-ext-400-normal.52237f44c81dd66b90e3.woff2",
+    "static/media/ica-priset.svg": "/static/media/ica-priset.0ec0b130bcacaab02684e06b19da45ac.svg",
     "static/media/roboto-mono-cyrillic-400-normal.woff2": "/static/media/roboto-mono-cyrillic-400-normal.3b6a3201563987f5c30c.woff2",
     "static/media/roboto-mono-greek-400-normal.woff2": "/static/media/roboto-mono-greek-400-normal.6c5721aefd48c14edd31.woff2",
     "static/media/roboto-mono-vietnamese-400-normal.woff2": "/static/media/roboto-mono-vietnamese-400-normal.baa5de8fd025f9a570c0.woff2",
     "static/media/sommarprat-ui.svg": "/static/media/sommarprat-ui.86c68e3ae075fcc97b35c4cbcbce3876.svg",
     "index.html": "/index.html",
     "main.ba169803.css.map": "/static/css/main.ba169803.css.map",
-    "main.fdce2500.js.map": "/static/js/main.fdce2500.js.map",
+    "main.1e63dc9b.js.map": "/static/js/main.1e63dc9b.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba169803.css",
-    "static/js/main.fdce2500.js"
+    "static/js/main.1e63dc9b.js"
   ]
 }
