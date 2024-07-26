@@ -6,10 +6,12 @@ import { Gxc } from "./cards/gxc";
 import { Sommarprat } from "./cards/Sommarprat";
 import { Talos } from "./cards/talos";
 import { IcaPrices } from "./cards/ica-prices";
+import { PokerSquares } from "./cards/poker-squares";
 
 export const Work = () => {
   return (
     <Main>
+      <PokerSquares />
       <IcaPrices />
       <Sommarprat />
       <Talos />
