@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ba169803.css",
-    "main.js": "/static/js/main.1e63dc9b.js",
+    "main.js": "/static/js/main.6d0097c8.js",
     "static/js/787.cfd8f164.chunk.js": "/static/js/787.cfd8f164.chunk.js",
     "static/media/roboto-mono-all-400-normal.woff": "/static/media/roboto-mono-all-400-normal.8c12dec86f8b17eac652.woff",
     "static/media/roboto-mono-cyrillic-ext-400-normal.woff2": "/static/media/roboto-mono-cyrillic-ext-400-normal.b60acdafdfd55591eddf.woff2",
@@ -12,13 +12,14 @@
     "static/media/roboto-mono-greek-400-normal.woff2": "/static/media/roboto-mono-greek-400-normal.6c5721aefd48c14edd31.woff2",
     "static/media/roboto-mono-vietnamese-400-normal.woff2": "/static/media/roboto-mono-vietnamese-400-normal.baa5de8fd025f9a570c0.woff2",
     "static/media/sommarprat-ui.svg": "/static/media/sommarprat-ui.86c68e3ae075fcc97b35c4cbcbce3876.svg",
+    "static/media/poker-squares.svg": "/static/media/poker-squares.24f5b333b4c20a4a164023dd9e9fc118.svg",
     "index.html": "/index.html",
     "main.ba169803.css.map": "/static/css/main.ba169803.css.map",
-    "main.1e63dc9b.js.map": "/static/js/main.1e63dc9b.js.map",
+    "main.6d0097c8.js.map": "/static/js/main.6d0097c8.js.map",
     "787.cfd8f164.chunk.js.map": "/static/js/787.cfd8f164.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba169803.css",
-    "static/js/main.1e63dc9b.js"
+    "static/js/main.6d0097c8.js"
   ]
 }
