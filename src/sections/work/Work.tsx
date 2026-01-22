@@ -7,10 +7,12 @@ import { Sommarprat } from "./cards/Sommarprat";
 import { Talos } from "./cards/talos";
 import { IcaPrices } from "./cards/ica-prices";
 import { PokerSquares } from "./cards/poker-squares";
+import { Ibis } from "./cards/ibis";
 
 export const Work = () => {
   return (
     <Main>
+      <Ibis />
       <PokerSquares />
       <IcaPrices />
       <Sommarprat />

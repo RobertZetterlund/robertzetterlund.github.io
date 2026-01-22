@@ -21,7 +21,7 @@ export const PokerSquares = () => {
             rel="noreferrer"
             target="_blank"
           >
-            https://poker-squares.vercel.app/
+            poker-squares.vercel.app
           </a>
         </Body>
         <ul>

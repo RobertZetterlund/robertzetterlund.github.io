@@ -1,33 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import { Body, Card, ImageContainerCss, Picture, Text } from "./card.styled";
-import icaPrices from "./ica-priset.svg";
+import ibisImg from "./ibis.png";
 
-export const IcaPrices = () => {
+export const Ibis = () => {
   return (
     <Card>
       <ImageContainer>
-        <Picture
-          src={icaPrices}
-          style={{ borderRadius: 24 }}
-          alt="Logotype of the grocery store ICA followed by a the text '-prices?'"
-        />
+        <Picture src={ibisImg} style={{ borderRadius: 24 }} alt="Ibis+" />
       </ImageContainer>
       <Text>
         <Body>
-          {"Created wordle-esque: "}
+          {"Created chrome extension: "}
           <a
-            href="https://ica-prices.vercel.app/"
+            href="https://chromewebstore.google.com/detail/ibis+/gnafengimackgbckodokckgiinofafgh"
             rel="noreferrer"
             target="_blank"
           >
-            ica-prices.vercel.app
+            ibis+
           </a>
+          {" to improve floorball statistic website"}
         </Body>
         <ul>
           <li>
-            <a href="https://preactjs.com/">Preact.js ⚛️</a>
+            <a href="https://reactjs.org/">React 🌀</a>
           </li>
+          <li>js dom manip 😎</li>
         </ul>
       </Text>
     </Card>
@@ -36,14 +34,14 @@ export const IcaPrices = () => {
 
 const ImageContainer = styled.div`
   ${ImageContainerCss};
-  background: #e13205;
+  background: #0b2b83;
   background: linear-gradient(
     45deg,
-    #6a1b1b,
-    #e13205,
-    #6a1b1b,
-    #6a1b1b,
-    #e13205
+    #be8003,
+    #be3102,
+    #be8003,
+    #be8003,
+    #be3102
   );
   background-size: 400% 400%;
 `;
