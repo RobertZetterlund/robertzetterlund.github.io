@@ -9,10 +9,12 @@ import { IcaPrices } from "./cards/ica-prices";
 import { PokerSquares } from "./cards/poker-squares";
 import { Riksdagle } from "./cards/riksdagle";
 import { Ibis } from "./cards/ibis";
+import { Pojeng } from "./cards/pojeng";
 
 export const Work = () => {
   return (
     <Main>
+      <Pojeng />
       <Riksdagle />
       <Ibis />
       <PokerSquares />
